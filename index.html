@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="ExploreEase helps you discover destinations, browse curated tour packages and find stays for your next journey.">
+  <title>ExploreEase | Discover Your Next Journey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top site-nav">
+    <div class="container">
+      <a class="navbar-brand" href="#home"><span class="brand-mark">✦</span> Explore<span>Ease</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#packages">Tour Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#stays">Hotels</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="btn btn-brand nav-cta" href="#packages">Explore trips <span>↗</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-shade"></div>
+    <div class="container hero-content">
+      <p class="eyebrow light-eyebrow"><span></span> FIND YOUR NEXT ADVENTURE</p>
+      <h1>Collect moments.<br><em>Discover places.</em></h1>
+      <p class="hero-copy">From peaceful mountain escapes to vibrant coastal towns, your next unforgettable journey
+        starts here.</p>
+      <div class="hero-actions"><a href="#destinations" class="btn btn-brand btn-lg">Explore destinations
+          <span>↗</span></a><a href="#about" class="text-link-light">Why travel with us? <span>→</span></a></div>
+      <div class="hero-note"><span class="note-line"></span><span>Thoughtfully planned journeys for curious
+          travellers</span></div>
+    </div>
+    <div class="hero-stamp"><span>TRAVEL</span><strong>MORE</strong><span>WONDER</span></div>
+  </header>
+
+  <main>
+    <section class="search-wrap container" aria-label="Find a trip">
+      <form id="tripSearch" class="search-panel row g-3 align-items-end">
+        <div class="col-12 col-md-4"><label for="destinationInput">Where do you want to go?</label>
+          <div class="input-icon"><span>⌖</span><input id="destinationInput" class="form-control" type="text"
+              placeholder="Search a destination"></div>
+        </div>
+        <div class="col-6 col-md-3"><label for="tripType">Travel style</label><select id="tripType" class="form-select">
+            <option value="all">Any experience</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Beach">Beach escape</option>
+            <option value="Culture">Culture & heritage</option>
+            <option value="Nature">Nature</option>
+          </select></div>
+        <div class="col-6 col-md-3"><label for="travellers">Travellers</label><select id="travellers"
+            class="form-select">
+            <option>2 travellers</option>
+            <option>1 traveller</option>
+            <option>3 travellers</option>
+            <option>4 travellers</option>
+            <option>5+ travellers</option>
+          </select></div>
+        <div class="col-12 col-md-2 d-grid"><button class="btn btn-dark search-btn" type="submit">Find trips
+            <span>→</span></button></div>
+      </form>
+    </section>
+
+    <section class="section-pad destinations-section" id="destinations">
+      <div class="container">
+        <div class="section-heading d-flex flex-wrap justify-content-between align-items-end gap-3">
+          <div>
+            <p class="eyebrow">THE WORLD IS WAITING</p>
+            <h2>Places worth <em>the journey.</em></h2>
+            <p class="section-intro">A little inspiration for wherever your curiosity takes you.</p>
+          </div><a class="text-link" href="#packages">See all experiences <span>→</span></a>
+        </div>
+        <div class="row g-4" id="destinationGrid">
+          <div class="col-12 col-md-6 col-lg-4 destination-item" data-name="Manali Himachal mountains India"
+            data-type="Adventure Nature">
+            <article class="destination-card"><img
+                src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=900&q=85"
+                alt="Snow-capped Himalayan mountains near Manali">
+              <div class="destination-overlay">
+                <div><span class="destination-tag">MOUNTAINS</span>
+                  <h3>Manali, India</h3>
+                  <p>Himalayan air & quiet trails</p>
+                </div><span class="round-arrow">↗</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 destination-item" data-name="Goa beaches India coast" data-type="Beach">
+            <article class="destination-card"><img
+                src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=900&q=85"
+                alt="Palm trees and tropical beach in Goa">
+              <div class="destination-overlay">
+                <div><span class="destination-tag">COASTAL ESCAPE</span>
+                  <h3>Goa, India</h3>
+                  <p>Sunshine, sand & slow days</p>
+                </div><span class="round-arrow">↗</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 destination-item" data-name="Jaipur Rajasthan heritage culture India"
+            data-type="Culture">
+            <article class="destination-card"><img
+                src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=900&q=85"
+                alt="Hawa Mahal palace in Jaipur">
+              <div class="destination-overlay">
+                <div><span class="destination-tag">CULTURE & HERITAGE</span>
+                  <h3>Jaipur, India</h3>
+                  <p>Colourful streets & royal stories</p>
+                </div><span class="round-arrow">↗</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 destination-item" data-name="Kerala backwaters nature India"
+            data-type="Nature">
+            <article class="destination-card"><img
+                src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=900&q=85"
+                alt="Green Kerala landscape and backwaters">
+              <div class="destination-overlay">
+                <div><span class="destination-tag">SLOW TRAVEL</span>
+                  <h3>Kerala, India</h3>
+                  <p>Backwaters & lush green escapes</p>
+                </div><span class="round-arrow">↗</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 destination-item" data-name="Udaipur Rajasthan lakes culture India"
+            data-type="Culture">
+            <article class="destination-card"><img
+                src="https://images.unsplash.com/photo-1602643163983-ed0babc39797?auto=format&fit=crop&w=900&q=85"
+                alt="Lake and historic architecture in Udaipur">
+              <div class="destination-overlay">
+                <div><span class="destination-tag">CITY BREAK</span>
+                  <h3>Udaipur, India</h3>
+                  <p>Lakeside charm & timeless beauty</p>
+                </div><span class="round-arrow">↗</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 destination-item" data-name="Rishikesh Uttarakhand adventure river India"
+            data-type="Adventure Nature">
+            <article class="destination-card"><img
+                src="https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?auto=format&fit=crop&w=900&q=85"
+                alt="River and green mountain scenery in Rishikesh">
+              <div class="destination-overlay">
+                <div><span class="destination-tag">ADVENTURE</span>
+                  <h3>Rishikesh, India</h3>
+                  <p>River days & mountain energy</p>
+                </div><span class="round-arrow">↗</span>
+              </div>
+            </article>
+          </div>
+        </div>
+        <p id="searchMessage" class="search-message" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="story-band" id="about">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="story-image"><img
+                src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1100&q=85"
+                alt="A peaceful alpine lake surrounded by mountains">
+              <div class="image-caption"><span>01 / 03</span><strong>Make room for wonder.</strong></div>
+            </div>
+          </div>
+          <div class="col-lg-6 story-copy">
+            <p class="eyebrow">A BETTER WAY TO GET AWAY</p>
+            <h2>Travel should feel<br><em>like you.</em></h2>
+            <p>We believe the best journeys are more than a checklist of places. They are the unexpected views, the
+              local flavours, the people you meet and the stories you bring home.</p>
+            <p>ExploreEase brings destination inspiration, thoughtfully arranged tour ideas and stay options together in
+              one simple place—so planning feels as exciting as the journey itself.</p><a href="#contact"
+              class="btn btn-outline-dark mt-2">Get to know us <span>↗</span></a>
+            <div class="mini-stats row g-3">
+              <div class="col-4"><strong>20+</strong><span>Trip ideas</span></div>
+              <div class="col-4"><strong>6</strong><span>Featured places</span></div>
+              <div class="col-4"><strong>100%</strong><span>Curiosity</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad packages-section" id="packages">
+      <div class="container">
+        <div class="section-heading text-center mx-auto">
+          <p class="eyebrow">PICK YOUR PACE</p>
+          <h2>Trips made for <em>you.</em></h2>
+          <p class="section-intro">A few ways to turn your next break into a favourite memory.</p>
+        </div>
+        <div class="row g-4 mt-2" id="packageGrid">
+          <div class="col-md-6 col-lg-4 package-item" data-name="Himalayan escape Manali" data-type="Adventure Nature">
+            <article class="package-card">
+              <div class="package-photo"><img
+                  src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=85"
+                  alt="Mountain peaks under a starry sky"><span class="package-label">ADVENTURE</span></div>
+              <div class="package-body">
+                <div class="package-meta"><span>⌖ Manali, Himachal</span><span>5 days / 4 nights</span></div>
+                <h3>Himalayan Escape</h3>
+                <p>Explore mountain viewpoints, peaceful valleys and scenic local trails.</p>
+                <div class="package-bottom">
+                  <div><small>Starting from</small><strong>₹12,999 <small>/ person</small></strong></div><button
+                    class="btn btn-package book-btn" data-package="Himalayan Escape">View details ↗</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 package-item" data-name="Goa coastal retreat beach" data-type="Beach">
+            <article class="package-card">
+              <div class="package-photo"><img
+                  src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85"
+                  alt="Clear blue sea and sandy beach"><span class="package-label">BEACH</span></div>
+              <div class="package-body">
+                <div class="package-meta"><span>⌖ Goa, India</span><span>4 days / 3 nights</span></div>
+                <h3>Coastal Retreat</h3>
+                <p>Unwind by the sea, explore colourful markets and enjoy relaxed coastal days.</p>
+                <div class="package-bottom">
+                  <div><small>Starting from</small><strong>₹9,499 <small>/ person</small></strong></div><button
+                    class="btn btn-package book-btn" data-package="Coastal Retreat">View details ↗</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 package-item" data-name="Royal Rajasthan Jaipur Udaipur culture"
+            data-type="Culture">
+            <article class="package-card">
+              <div class="package-photo"><img
+                  src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=900&q=85"
+                  alt="Traditional Rajasthani palace architecture"><span class="package-label">CULTURE</span></div>
+              <div class="package-body">
+                <div class="package-meta"><span>⌖ Jaipur & Udaipur</span><span>6 days / 5 nights</span></div>
+                <h3>Royal Rajasthan</h3>
+                <p>Discover grand architecture, historic streets, local crafts and cuisine.</p>
+                <div class="package-bottom">
+                  <div><small>Starting from</small><strong>₹15,499 <small>/ person</small></strong></div><button
+                    class="btn btn-package book-btn" data-package="Royal Rajasthan">View details ↗</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <p class="pricing-note">* Package names, sample prices and itineraries are illustrative website content and
+          should be confirmed before any real booking.</p>
+      </div>
+    </section>
+
+    <section class="hotel-section section-pad" id="stays">
+      <div class="container">
+        <div class="section-heading d-flex flex-wrap justify-content-between align-items-end gap-3">
+          <div>
+            <p class="eyebrow">REST EASY</p>
+            <h2>Stay somewhere <em>special.</em></h2>
+            <p class="section-intro">A comfortable base makes every adventure better.</p>
+          </div><span class="stay-note">A few stay ideas to inspire your trip</span>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <article class="stay-card"><img
+                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=85"
+                alt="Resort swimming pool surrounded by greenery">
+              <div><span>RESORT · GOA</span>
+                <h3>Seaside Garden Stay</h3>
+                <p>Relaxed resort-style comfort near the coast.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="stay-card"><img
+                src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=900&q=85"
+                alt="Cosy wooden mountain cabin">
+              <div><span>MOUNTAIN LODGE · MANALI</span>
+                <h3>Pine View Retreat</h3>
+                <p>A cosy mountain-inspired escape with scenic views.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="stay-card"><img
+                src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=85"
+                alt="Elegant hotel bedroom with warm natural light">
+              <div><span>BOUTIQUE HOTEL · JAIPUR</span>
+                <h3>Heritage Courtyard</h3>
+                <p>Classic details and a welcoming city-centre feel.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <p class="pricing-note">Hotel names and descriptions are illustrative examples, not verified accommodation
+          listings.</p>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="container text-center"><span class="quote-mark">“</span>
+        <blockquote>We travel not to escape life, but for life not to escape us.</blockquote>
+        <p>LET CURIOSITY LEAD THE WAY</p>
+      </div>
+    </section>
+
+    <section class="section-pad contact-section" id="contact">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <p class="eyebrow">LET'S PLAN SOMETHING</p>
+            <h2>Your next story<br>starts <em>here.</em></h2>
+            <p class="section-intro">Have a destination in mind or need a little inspiration? Send us a message.</p>
+            <div class="contact-detail"><span>✉</span>
+              <div><small>EMAIL</small><strong>mahakchoursiya.tech@gmail.com</strong></div>
+            </div>
+            <div class="contact-detail"><span>⌖</span>
+              <div><small>LOCATION</small><strong>India · Made for explorers everywhere</strong></div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6"><label for="fullName">Your name</label><input class="form-control" id="fullName"
+                    type="text" placeholder="Enter your name" required></div>
+                <div class="col-md-6"><label for="email">Email address</label><input class="form-control" id="email"
+                    type="email" placeholder="you@example.com" required></div>
+                <div class="col-12"><label for="interest">What are you interested in?</label><select class="form-select"
+                    id="interest">
+                    <option>I'm exploring trip ideas</option>
+                    <option>Tour packages</option>
+                    <option>Hotel information</option>
+                    <option>Something else</option>
+                  </select></div>
+                <div class="col-12"><label for="message">Your message</label><textarea class="form-control" id="message"
+                    rows="4" placeholder="Tell us a little about your dream trip..." required></textarea></div>
+                <div class="col-12 d-flex flex-wrap align-items-center gap-3"><button class="btn btn-brand btn-lg"
+                    type="submit">Send message <span>↗</span></button><span class="form-feedback" id="formFeedback"
+                    aria-live="polite"></span></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3"><a
+          class="navbar-brand footer-brand" href="#home"><span class="brand-mark">✦</span> Explore<span>Ease</span></a>
+        <p>Find your place in the world.</p>
+        <div class="footer-links"><a href="#destinations">Destinations</a><a href="#packages">Packages</a><a
+            href="#contact">Contact</a></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year"></span> ExploreEase. Designed & Developed by
+          Mahak🌸🌹.</span><a href="#home">Back to top ↑</a></div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="packageModal" tabindex="-1" aria-labelledby="packageModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="packageModalTitle">Trip details</h5><button type="button" class="btn-close"
+            data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="packageModalBody">Explore this sample travel package.</div>
+        <div class="modal-footer"><button type="button" class="btn btn-outline-secondary"
+            data-bs-dismiss="modal">Close</button><a href="#contact" class="btn btn-brand" data-bs-dismiss="modal">Ask
+            about this trip ↗</a></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
